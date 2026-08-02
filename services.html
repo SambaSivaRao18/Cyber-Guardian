@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Cyber Guardian Security & VAPT</title>
+    <meta name="description" content="Explore Cyber Guardian's 3 core security services: VAPT Service, Student Training Program, and Cyber Awareness Program for staff.">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Services | Cyber Guardian Security & VAPT">
+    <meta property="og:description" content="Enterprise VAPT, Student Training Bootcamps, and Staff Cyber Awareness Programs.">
+    <meta property="og:image" content="assets/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Dynamic Header Navigation Bar -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="container nav-container">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">CYBER GUARDIAN</span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="training.html" class="nav-link">Training</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-outline-teal">Book Assessment</a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <div class="container">
+                <div class="banner-content reveal">
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <span>Services</span>
+                    </div>
+                    <h1 class="banner-title">Our Professional Services</h1>
+                    <p class="banner-subtitle">Specialized in Vulnerability Assessment, Student Practical Training, and Workforce Security Awareness.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 Core Services Summary Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <div class="section-tag"><i class="fa-solid fa-list-check"></i> Core Capabilities</div>
+                    <h2>Our Core Security Offerings</h2>
+                    <p>We focus exclusively on three high-impact security domains to ensure top-tier execution.</p>
+                </div>
+
+                <div class="services-3-grid">
+                    <!-- 1. VAPT Service -->
+                    <div class="svc-card reveal" id="vapt">
+                        <span class="svc-number">01. OFFENSIVE SECURITY</span>
+                        <h3 class="svc-title">VAPT SERVICE</h3>
+                        <p class="svc-desc">Vulnerability Assessment & Penetration Testing for web applications, APIs, and network perimeters. We identify business logic flaws and critical exploits before malicious actors do.</p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <div class="svc-feature-item"><span>✅Automated Baseline CVE Scanning</span></div>
+                            <div class="svc-feature-item"><span>✅Deep Human Manual Penetration Testing</span></div>
+                            <div class="svc-feature-item"><span>✅Detailed CVSS Risk & Remediation Reports</span></div>
+                            <div class="svc-feature-item"><span>✅Developer Consultation & Re-Testing Sign-Off</span></div>
+                        </div>
+                        <a href="contact.html?service=vapt" class="btn btn-dark btn-full">Book VAPT Assessment &rarr;</a>
+                    </div>
+
+                    <!-- 2. Student Training Program -->
+                    <div class="svc-card reveal" id="training-program">
+                        <span class="svc-number">02. PRACTICAL EDUCATION</span>
+                        <h3 class="svc-title">STUDENT TRAINING PROGRAM</h3>
+                        <p class="svc-desc">Immersive hands-on cybersecurity workshops and bootcamps for computer science and engineering students, bridging theory with live attack labs.</p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <div class="svc-feature-item"><span>✅Burp Suite, Nmap & Metasploit Labs</span></div>
+                            <div class="svc-feature-item"><span>✅OWASP Top 10 Web Exploitation</span></div>
+                            <div class="svc-feature-item"><span>✅Real-World Network Target Scenarios</span></div>
+                            <div class="svc-feature-item"><span>✅Real-world attack simulation</span></div>
+                             <div class="svc-feature-item"><span>✅Career Mentorship</span></div>
+                        </div>
+                        <a href="training.html" class="btn btn-dark btn-full">View Training Details &rarr;</a>
+                    </div>
+
+                    <!-- 3. Cyber Awareness Program -->
+                    <div class="svc-card reveal" id="awareness">
+                        <span class="svc-number">03. WORKFORCE DEFENSE</span>
+                        <h3 class="svc-title">CYBER AWARENESS PROGRAM</h3>
+                        <p class="svc-desc">Building strategic workforce resilience for staff and employees. We transform corporate teams into an alert human firewall against phishing and social engineering.</p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <div class="svc-feature-item"><span>✅Controlled Spear-Phishing Simulations</span></div>
+                            <div class="svc-feature-item"><span>✅Credential Theft & Impersonation Defense</span></div>
+                            <div class="svc-feature-item"><span>✅Employee Vulnerability Metrics</span></div>
+                            <div class="svc-feature-item"><span>✅Actionable Daily Security Hygiene Sessions</span></div>
+                        </div>
+                        <a href="contact.html?service=awareness" class="btn btn-dark btn-full">Inquire For Your Team &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 1 In-Depth Breakdown -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="grid-2" style="align-items: center; gap: 3.5rem;">
+                    <div class="reveal">
+                        <div class="section-tag"><i class="fa-solid fa-bug"></i> Service 01</div>
+                        <h2>VAPT Service Breakdown</h2>
+                        <p>Our Vulnerability Assessment and Penetration Testing evaluates your digital assets from an attacker's perspective. We systematically test web applications, REST APIs, and server infrastructure.</p>
+                        
+                        <div class="grid-2 mt-3" style="gap: 1.25rem;">
+                            <div style="background: #FFFFFF; padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                                <h4 style="font-size: 1rem; margin-bottom: 0.35rem;"><i class="fa-solid fa-magnifying-glass-chart" style="color: var(--color-secondary);"></i> 1. Baseline Scanning</h4>
+                                <p style="font-size: 0.85rem; margin: 0;">Automated auditing to catch unpatched CVEs, SSL errors, and configuration flaws.</p>
+                            </div>
+                            <div style="background: #FFFFFF; padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                                <h4 style="font-size: 1rem; margin-bottom: 0.35rem;"><i class="fa-solid fa-user-secret" style="color: var(--color-secondary);"></i> 2. Deep Manual Testing</h4>
+                                <p style="font-size: 0.85rem; margin: 0;">Human exploitation targeting authorization bypasses, SQLi, and business logic bugs.</p>
+                            </div>
+                            <div style="background: #FFFFFF; padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                                <h4 style="font-size: 1rem; margin-bottom: 0.35rem;"><i class="fa-solid fa-file-shield" style="color: var(--color-secondary);"></i> 3. Risk Reports</h4>
+                                <p style="font-size: 0.85rem; margin: 0;">CVSS 3.1 scored findings with step-by-step reproduction scripts for developers.</p>
+                            </div>
+                            <div style="background: #FFFFFF; padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                                <h4 style="font-size: 1rem; margin-bottom: 0.35rem;"><i class="fa-solid fa-screwdriver-wrench" style="color: var(--color-secondary);"></i> 4. Fix Verification</h4>
+                                <p style="font-size: 0.85rem; margin: 0;">Patch re-testing to confirm complete resolution before final report sign-off.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal">
+                        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-md);">
+                            <img src="assets/service.jpeg" alt="Cyber Security VAPT Assessment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testing Process Methodology Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <div class="section-tag"><i class="fa-solid fa-diagram-project"></i> Methodology</div>
+                    <h2>Our 5-Step VAPT Engagement Methodology</h2>
+                    <p>Disciplined, transparent, and structured testing lifecycle.</p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-step reveal">
+                        <div class="step-num">1</div>
+                        <h4 class="step-title">Scope</h4>
+                        <p class="step-desc">Define targets, boundaries, IP whitelisting, and rules of engagement.</p>
+                    </div>
+
+                    <div class="process-step reveal">
+                        <div class="step-num">2</div>
+                        <h4 class="step-title">Test</h4>
+                        <p class="step-desc">Execute automated baseline scans and deep manual penetration testing.</p>
+                    </div>
+
+                    <div class="process-step reveal">
+                        <div class="step-num">3</div>
+                        <h4 class="step-title">Report</h4>
+                        <p class="step-desc">Document CVSS findings, PoC scripts, and remediation guidelines.</p>
+                    </div>
+
+                    <div class="process-step reveal">
+                        <div class="step-num">4</div>
+                        <h4 class="step-title">Remediate</h4>
+                        <p class="step-desc">Provide direct engineering guidance to developer teams fixing issues.</p>
+                    </div>
+
+                    <div class="process-step reveal">
+                        <div class="step-num">5</div>
+                        <h4 class="step-title">Re-Test</h4>
+                        <p class="step-desc">Re-verify patches to ensure full resolution of all reported vulnerabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container">
+                <div class="service-cards">
+                    <!-- Service 02 -->
+                    <div class="service-card reveal">
+                        <div class="section-tag">
+                            <i class="fa-solid fa-user-graduate"></i> Service 02
+                        </div>
+                        <h2>Cyber Security Student Training Program</h2>
+                        <p>
+                            Our Student Training Program is designed to bridge the gap
+                            between academic learning and real-world cybersecurity
+                            practices.
+                        </p>
+                        <p>
+                            Students receive hands-on training in ethical hacking,
+                            network security, web application security, vulnerability
+                            assessment, and cybersecurity fundamentals through practical
+                            labs and real-world scenarios.
+                        </p>
+                        <p>
+                            We help aspiring cybersecurity professionals develop
+                            technical skills, security awareness, and industry-ready
+                            capabilities to build successful careers in cyber defense.
+                        </p>
+                        <a href="training.html#training" class="service-btn">
+                            View Training Blogs →
+                        </a>
+                    </div>
+
+                    <!-- Service 03 -->
+                    <div class="service-card reveal">
+                        <div class="section-tag">
+                            <i class="fa-solid fa-shield-halved"></i> Service 03
+                        </div>
+                        <h2>Cyber Security Awareness Training</h2>
+                        <p>
+                            Our Security Awareness Training program helps organizations
+                            build a strong human firewall by educating employees about
+                            modern cyber threats and safe digital practices.
+                        </p>
+                        <p>
+                            We train teams to identify phishing attacks, social
+                            engineering techniques, malware threats, password risks,
+                            and common security mistakes.
+                        </p>
+                        <p>
+                            Through interactive sessions and real-world examples, we
+                            empower employees to become the first line of defense
+                            against cyber threats.
+                        </p>
+                        <a href="training.html#training" class="service-btn">
+                            View Training Blogs →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action Banner -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="cta-banner reveal">
+                    <h2>Schedule a Security Engagement With Our Engineers</h2>
+                    <p>Reach out to discuss your web application, corporate training, or staff awareness needs.</p>
+                    <a href="contact.html" class="btn btn-accent btn-lg">Contact Us Now &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Unified Global Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/logo.png" alt="Cyber Guardian Logo">
+                        <span class="logo-text" style="color: #FFFFFF;">CYBER GUARDIAN</span>
+                    </a>
+                    <p>Securing Infrastructure & Empowering Engineers through professional VAPT services and practical cybersecurity education.</p>
+                    <div class="footer-socials">
+                       <a href="https://linkedin.com/in/samba-siva-rao-12linked" target="_blank"  aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/your-instagram-id/" target="_blank" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/6302463508" target="_blank" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:info@centixcyber.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#vapt">1. VAPT Service</a></li>
+                        <li><a href="training.html">2. Student Training Program</a></li>
+                        <li><a href="services.html#awareness">3. Cyber Awareness Program</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-info">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <p><i class="fa-solid fa-envelope"></i> info@centixcyber.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 6302463508</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Cyber Guardian.</p>
+        
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Core Interactive JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

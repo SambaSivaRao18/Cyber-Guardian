@@ -1,0 +1,12 @@
+# Disable directory listing
+Options -Indexes
+
+# Block PHP execution inside assets folder
+<FilesMatch "\.(php|php3|php4|php5|php7|phtml)$">
+    Deny from all
+</FilesMatch>
+
+# Prevent access to hidden files
+<FilesMatch "^\.">
+    Deny from all
+</FilesMatch>

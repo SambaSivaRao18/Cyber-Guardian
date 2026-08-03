@@ -242,3 +242,64 @@ scrollBtn.addEventListener("click", () => {
     });
 });
 document.addEventListener("contextmenu", e => e.preventDefault());
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const data = new FormData(this);
+
+    const text =
+`📩 New Contact Request
+
+👤 Name: ${data.get("Name")}
+📧 Email: ${data.get("Email")}
+📱 Phone: ${data.get("Phone")}
+💼 Service: ${data.get("Service")}
+
+📝 Message:
+${data.get("Message")}`;
+
+    const phone = "916302463508"; // Replace with your WhatsApp number
+
+    window.open(
+        `https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
+        "_blank"
+    );
+});
+
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener("keydown", function (e) {
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+
+    // Ctrl+Shift+I, J, C
+    if (e.ctrlKey && e.shiftKey &&
+        ["I", "J", "C"].includes(e.key.toUpperCase())) {
+        e.preventDefault();
+    }
+
+    // Ctrl+U
+    if (e.ctrlKey && e.key.toUpperCase() === "U") {
+        e.preventDefault();
+    }
+
+    // Ctrl+S
+    if (e.ctrlKey && e.key.toUpperCase() === "S") {
+        e.preventDefault();
+    }
+
+    // Ctrl+A
+    if (e.ctrlKey && e.key.toUpperCase() === "A") {
+        e.preventDefault();
+    }
+
+    // Ctrl+C
+    if (e.ctrlKey && e.key.toUpperCase() === "C") {
+        e.preventDefault();
+    }
+});

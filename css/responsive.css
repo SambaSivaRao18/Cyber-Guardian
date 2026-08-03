@@ -7,6 +7,19 @@ CYBER GUARDIAN | Production Responsive Media Queries (css/responsive.css)
 /* -------------------------------------------------------------
    1. Large Laptops & Desktops (max-width: 1200px)
 ------------------------------------------------------------- */
+
+* {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 1000px;

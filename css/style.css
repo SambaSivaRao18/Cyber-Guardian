@@ -3,7 +3,6 @@
 CYBER GUARDIAN | Production-Ready Fluid & Responsive Stylesheet
 ================================================================
 */
-
 /* -------------------------------------------------------------
    1. Design Tokens & CSS Variables
 ------------------------------------------------------------- */
@@ -164,8 +163,9 @@ p:last-child { margin-bottom: 0; }
 }
 
 .btn-dark:hover {
-    background-color: #1F2937;
-    transform: translateY(-1px);
+    background: #0d6efd;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(13,110,253,.35);
 }
 
 .btn-outline-dark {
@@ -798,6 +798,8 @@ p:last-child { margin-bottom: 0; }
     font-size: .85rem;
     font-weight: 600;
 }
+
+
 
 .footer-socials {
     display: flex;

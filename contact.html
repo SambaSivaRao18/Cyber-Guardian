@@ -33,7 +33,7 @@
     <header>
         <nav class="navbar" id="navbar">
             <div class="container nav-container">
-                    <span class="logo-text">CYBER GUARDIAN</span>
+                    <span class="logo-text">CYBER GUARDIANS</span>
                 </a>
 
                 <ul class="nav-menu" id="navMenu">
@@ -45,7 +45,7 @@
                 </ul>
 
                 <div class="nav-cta">
-                    <a href="contact.html" class="btn btn-outline-teal">Book Assessment</a>
+                    <a href="contact.html#contact" class="btn btn-outline-teal">Book Assessment</a>
                     <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
                         <span></span>
                         <span></span>
@@ -115,18 +115,20 @@
                                 <p style="font-size: small;">Call or WhatsApp Us</p>
                             </div>
                         </div>
-
+                        <a href="https://wa.me/916302463508">
+                            <button class="contact-btn">Send Message<i class="fa-brands fa-whatsapp"></i></button>
+                        </a>
 
                         <!-- Social -->
                         <div class="connect-box">
                             <span>Follow & Connect</span>
 
                             <div class="footer-socials">
-                                <a href="https://www.linkedin.com/in/samba-siva-rao-12linked/" target="_blank">
-                                    <i class="fa-brands fa-linkedin-in"></i>
+                                <a href="https://wa.me/6302463508" target="_blank" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
                                 </a>
 
-                                <a href="mailto:sambayadav121@gmail.com">
+                                <a href="mailto:info@cyberguardian.co.in">
                                     <i class="fa-solid fa-envelope"></i>
                                 </a>
                             </div>
@@ -136,14 +138,14 @@
 
 
                     <!-- Right: Contact Form -->
-                    <div class="contact-form-wrapper reveal">
+                    <div class="contact-form-wrapper reveal" id="contact">
                         <h3>Tell Us About Your Requirements</h3>
 
                         <p>
                             Fill out the form below and let us know how we can help. Our team will review your request and get back to you as soon as possible.
                         </p>
 
-                        <form id="contactForm">
+                        <form action="https://formsubmit.co/sambayadav121@gmail.com" id="contactForm" method="POST">
 
 
                             <!-- Disable Captcha (Optional) -->
@@ -160,23 +162,13 @@
                                 <div class="form-group">
                                     <label class="form-label">Full Name </label>
 
-                                    <input
-                                        type="text"
-                                        name="Name"
-                                        class="form-control"
-                                        placeholder="Enter your full Name"
-                                        required>
+                                    <input type="text" name="Name" class="form-control" placeholder="Enter your full Name" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="form-label">Email Address </label>
 
-                                    <input
-                                        type="email"
-                                        name="Email"
-                                        class="form-control"
-                                        placeholder="Enter your mail address"
-                                        required>
+                                    <input type="email"  name="Email" class="form-control" placeholder="Enter your mail address" required>
                                 </div>
 
                             </div>
@@ -186,11 +178,7 @@
                                 <div class="form-group">
                                     <label class="form-label">Phone Number</label>
 
-                                    <input
-                                        type="tel"
-                                        name="Phone"
-                                        class="form-control"
-                                        placeholder="Enter phone number (+91)">
+                                    <input type="tel" name="Phone" class="form-control" placeholder="Enter phone number (+91)" required>
                                 </div>
 
                                 <div class="form-group">
@@ -215,18 +203,13 @@
 
                                 <label class="form-label">Your Message *</label>
 
-                                <textarea
-                                    name="Message"
-                                    class="form-control"
-                                    rows="5"
-                                    placeholder="Describe your requirements. We'll get back to you with the best solution."
-                                    required></textarea>
+                                <textarea name="Message" class="form-control" rows="5" placeholder="Describe your requirements. We'll get back to you with the best solution." required></textarea>
 
                             </div>
 
                             <button type="submit" class="btn btn-dark btn-lg btn-full">
                                 Submit Request
-                                <i class="fa-solid fa-paper-plane"></i>
+                                 <i class="fa-solid fa-envelope"></i>
                             </button>
 
                         </form>
@@ -261,20 +244,15 @@
                 <div class="footer-brand">
                     <a href="index.html" class="logo-link">
                         <img src="assets/logo.png" alt="Cyber Guardian Logo">
-                        <span class="logo-text" style="color: #FFFFFF;">CYBER GUARDIAN</span>
+                        <span class="logo-text" style="color: #FFFFFF;">CYBER GUARDIANS</span>
                     </a>
                     <p>Cyber Guardian provides professional cybersecurity solutions, including VAPT services, cybersecurity training, and awareness programs to help businesses, educational institutions, and individuals stay secure in today's digital world.</p>
                     <div class="footer-socials">
-                       <a href="https://linkedin.com/in/samba-siva-rao-12linked" target="_blank"  aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.instagram.com/cyber__guardian" target="_blank" aria-label="Instagram">
-                            <i class="fa-brands fa-instagram"></i>
                         </a>
                         <a href="https://wa.me/6302463508" target="_blank" aria-label="WhatsApp">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
-                        <a href="mailto:sambayadav121@gmail.com" aria-label="Email">
+                        <a href="mailto:info@cyberguardian.co.in" aria-label="Email">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                     </div>
@@ -297,7 +275,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p><span id="currentYear"></span> Cyber Guardian.</p>
+                <p><span id="currentYear"></span> Cyber Guardians.</p>
             </div>
         </div>
     </footer>

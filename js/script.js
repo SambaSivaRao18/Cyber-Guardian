@@ -242,14 +242,14 @@ scrollBtn.addEventListener("click", () => {
     });
 });
 document.addEventListener("contextmenu", e => e.preventDefault());
-
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+/*
+document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const data = new FormData(this);
+    try {
+        const data = new FormData(this);
 
-    const text =
-`📩 New Contact Request
+        const text = `📩 New Contact Request
 
 👤 Name: ${data.get("Name")}
 📧 Email: ${data.get("Email")}
@@ -259,12 +259,45 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 📝 Message:
 ${data.get("Message")}`;
 
-    const phone = "916302463508"; // Replace with your WhatsApp number
+        const phone = "91xxxxxxxx";
 
-    window.open(
-        `https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
-        "_blank"
-    );
+        const whatsappWindow = window.open(
+            `https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
+            "_blank"
+        );
+
+        if (whatsappWindow) {
+            alert("WhatsApp opened successfully. Please click Send to complete your message.");
+            this.reset();
+        } else {
+            alert("Popup blocked! Please allow popups and try again.");
+        }
+
+    } catch (error) {
+        console.error(error);
+        alert("Something went wrong. Please try again.");
+    }
+});
+*/
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const form = this;
+
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(form)
+    })
+    .then(() => {
+        alert("Thank you! Your request has been sent successfully.");
+        form.reset();
+    })
+    .catch(() => {
+        alert("Failed to send. Please try again.");
+    });
+
 });
 
 document.addEventListener("contextmenu", function (e) {

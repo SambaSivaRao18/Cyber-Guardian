@@ -835,3 +835,13 @@ img {
         gap: 2rem;
     }
 }
+
+/* Service box images border-radius for mobile screens */
+@media (max-width: 768px) {
+    .svc-card img,
+    .svc-card div:has(> img),
+    .service-card img,
+    .service-card div:has(> img) {
+        border-radius: 12px !important;
+    }
+}

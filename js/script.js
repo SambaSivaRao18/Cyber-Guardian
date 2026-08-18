@@ -328,46 +328,49 @@ function classifyFetchError(err, httpStatus) {
 /* ---------------------------------------------------------
    13. Contact Form Submission via Fetch
 --------------------------------------------------------- */
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    const form      = this;
-    const submitBtn = form.querySelector('button[type="submit"]');
+        const form      = this;
+        const submitBtn = form.querySelector('button[type="submit"]');
 
-    // Wire client email into _replyto so you can reply directly from inbox
-    const clientEmail = form.querySelector('input[name="Email"]');
-    const replyTo     = form.querySelector('input[name="_replyto"]');
-    if (clientEmail && replyTo) replyTo.value = clientEmail.value.trim();
+        // Wire client email into _replyto so you can reply directly from inbox
+        const clientEmail = form.querySelector('input[name="Email"]');
+        const replyTo     = form.querySelector('input[name="_replyto"]');
+        if (clientEmail && replyTo) replyTo.value = clientEmail.value.trim();
 
-    // Loading state
-    const originalHTML   = submitBtn.innerHTML;
-    submitBtn.disabled   = true;
-    submitBtn.innerHTML  = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+        // Loading state
+        const originalHTML   = submitBtn.innerHTML;
+        submitBtn.disabled   = true;
+        submitBtn.innerHTML  = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
 
-    fetch(form.action, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            submitBtn.disabled  = false;
-            submitBtn.innerHTML = originalHTML;
+        fetch(form.action, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                submitBtn.disabled  = false;
+                submitBtn.innerHTML = originalHTML;
 
-            if (!response.ok) {
+                if (!response.ok) {
+                    showModal(
+                        'Your message could not be delivered. Please try again or contact us via WhatsApp.',
+                        'error',
+                        classifyFetchError(null, response.status)
+                    );
+                    return;
+                }
+
+                showModal('Your message has been sent successfully! ✅\nThank you for reaching out! Our team has received your message and will get back to you within 48 hours.');
+                form.reset();
+            })
+            .catch(err => {
+                submitBtn.disabled  = false;
+                submitBtn.innerHTML = originalHTML;
                 showModal(
                     'Your message could not be delivered. Please try again or contact us via WhatsApp.',
                     'error',
-                    classifyFetchError(null, response.status)
+                    classifyFetchError(err, null)
                 );
-                return;
-            }
-
-            showModal('Your message has been sent successfully! ✅\nThank you for reaching out! Our team has received your message and will get back to you within 48 hours.');
-            form.reset();
-        })
-        .catch(err => {
-            submitBtn.disabled  = false;
-            submitBtn.innerHTML = originalHTML;
-            showModal(
-                'Your message could not be delivered. Please try again or contact us via WhatsApp.',
-                'error',
-                classifyFetchError(err, null)
-            );
-        });
-});
+            });
+    });
+}

@@ -305,6 +305,10 @@ p:last-child {
     gap: 2.25rem;
 }
 
+.mobile-nav-cta {
+    display: none;
+}
+
 .nav-link {
     font-family: var(--font-heading);
     font-size: 1rem;
@@ -682,6 +686,24 @@ p:last-child {
     font-size: clamp(1.15rem, 2vw, 1.35rem);
     color: var(--color-heading);
     margin-bottom: 0.85rem;
+}
+
+.svc-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: var(--transition);
+}
+
+.svc-card div:has(> img) {
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.25rem;
+}
+
+.svc-card:hover img {
+    transform: scale(1.06);
 }
 
 .svc-desc {

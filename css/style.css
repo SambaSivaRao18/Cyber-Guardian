@@ -609,6 +609,12 @@ p:last-child {
     gap: 2rem;
 }
 
+.grid-2-auto {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+}
+
 
 
 .image-wrapper img {

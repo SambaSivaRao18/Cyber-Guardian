@@ -1,5 +1,11 @@
-User-agent: *
-Allow: /
-Disallow: /assets/
+User-agent: * Allow: /
 
-Sitemap: https://cyberguardian.co.in/sitemap.xml
+User-agent: GPTBot Disallow: /
+
+User-agent: ClaudeBot Disallow: /
+
+User-agent: Google-Extended Disallow: /
+
+User-agent: Bytespider Disallow: /
+
+Sitemap: https://www.cyberguardian.co.in/sitemap.xml

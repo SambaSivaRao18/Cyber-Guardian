@@ -1,0 +1,20 @@
+{
+  "name": "Cyber Guardian",
+  "short_name": "CyberGuardian",
+  "icons": [
+    {
+      "src": "/assets/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0a0f1d",
+  "background_color": "#0a0f1d",
+  "display": "standalone",
+  "start_url": "/"
+}
